@@ -4,10 +4,10 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { dataRoute } from './routes/data.js';
 const app = express();
+app.use(cors());
 
 dotenv.config();
 app.use(express.json());
-app.use(cors("*"));
 app.use("/api/data", dataRoute);
 
 
