@@ -23,4 +23,4 @@ router.get('fetch/products',async (req, res) => {
     }
   });
 
-  export const dataRoute = router;
+  export default router;
